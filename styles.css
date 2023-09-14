@@ -1,0 +1,153 @@
+:root{
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poltawski Nowy', serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #EFD9D1;
+    color: var(--dark);
+ }
+  
+  .app-container {
+    
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(30, 29, 29, 0.1);
+  }
+  h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--darker);
+    margin-bottom: 1rem;
+  }
+  
+  .add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+ }
+
+  #task-input{
+    flex: 1 1 0%;
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+  }
+
+  #task-input::placeholder{
+    color: var(--gray);
+  }
+
+  #add-button{
+    color: var(--pink);
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right,var(--pink),var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  #add-button:hover{
+    opacity: 0.8;
+
+}
+
+#add-button:active{
+    opacity: 0.6;
+    
+}
+
+  
+.tasks h2 {
+    
+      font-size:  1.5rem; 
+      font-weight: 300;
+      color: var(--darker);
+      margin-bottom: 20px;
+  
+    
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.25rem;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1.25rem;
+  }
+  .complete-button{
+    cursor: pointer;
+    background-image: linear-gradient(to right,var(--pink),var(--purple));
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+
+  }
+  .complete-button:hover{
+    opacity: 0.6;
+  }
+  
+  .delete-button{
+    cursor: pointer;
+    color: crimson;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .delete-button:hover{
+    opacity: 0.6;
+  }
+
+  .completed {
+    font-size: 1.25rem;
+    font-weight: 300;
+    background-color: #d3ffd3;
+    /* background-color: #F4EEED; */
+    cursor: pointer;
+    text-decoration: line-through;
+  }
+  
